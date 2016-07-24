@@ -1,5 +1,5 @@
 # AnkiIRExtension
-An Chrome Extension for [Incremental Reading](https://en.wikipedia.org/wiki/Incremental_reading) with Anki Integration.
+An Chrome Extension for [Incremental Reading](https://en.wikipedia.org/wiki/Incremental_reading) with [Anki](http://ankisrs.net/) Integration.
 
 ## Currently under development:
 
