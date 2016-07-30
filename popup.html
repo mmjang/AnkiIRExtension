@@ -12,23 +12,45 @@
 
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-	<script src="jquery.min.js"></script>
+    <script src="jquery.min.js"></script>
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="bootstrap.min.js"></script>
-    
+	<script src="awesomplete.min.js"></script>
+	<script src="scripts/jHtmlArea-0.8.min.js"></script>
+	<script src="scripts/jHtmlArea.ColorPickerMenu-0.8.min.js"></script>
+	<link rel="stylesheet" href="awesomplete.css">
+	<link rel="stylesheet" href="style/jHtmlArea.css">
+	<link rel="stylesheet" href="style/ColorPickerMenu.css">
+	
 	<style>
 	body
 	{
 		width:800px;
+	}
+	.dictionary
+	{
+		margin-top:20px;
+	}
+	.search
+	{
+	}
+	.field
+	{
+		width:100%;
+		height:150px;
+	}
+	.anki
+	{
+
 	}
     </style>
 
     <script src="popup.js"></script>
   </head>
   <body>
-    <div class="container">
+    <div class="container-fluid">
 		<div class="row">
-			<div class="col-xs-4">
+			<div class="col-xs-6 anki">
 				<div class="row">	
 					<h2 class="col-xs-12">AnkiConnect</h2>
 				</div>
@@ -53,9 +75,10 @@
 					</select>
 				</div>
 				</div>
-		
-				<form id="fields">		
-				</form>
+				<div class="row">
+				<div id="fields" class="col-xs-12">		
+				</div>
+				</div>
 				
 				<div class="row">
 					<div class="col-xs-12">
@@ -64,8 +87,30 @@
 				</div>
 			</div>
 			
-			<div class = "col-xs-8" id="definition">
+			<div class = "col-xs-6 dictionary">
+				<div class="row">
+					<div class="col-xs-12" id="div_mess">
+						
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-1 search">
+						<button type="button" class="btn btn-default" id="search">
+							<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+						</button>
+					</div>
 				
+					<div class="col-xs-11">
+						<input id="hwd" class="form-control"/>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-xs-12">
+					<div  id="definition">
+					</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
